@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Робота з Інформатики за ІІ семестр 2025–2026 н.р.</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="description"
+        content="Сторінка 1 роботи з інформатики: інформаційна безпека, загрози, захисні механізми, електронний підпис, VPN." />
+</head>
+
+<body>
+    <header class="hero">
+        <nav class="topbar" aria-label="Головна навігація">
+            <a class="brand" href="index.html" aria-label="На головну">
+                <span class="brand-mark">⛨</span>
+                <span>Інформаційна безпека</span>
+            </a>
+            <div class="navlinks">
+                <a class="active" href="index.html">Сторінка 1</a>
+                <a href="story.html">Сторінка 2</a>
+            </div>
+        </nav>
+
+        <section class="hero-grid">
+            <div>
+                <p class="eyebrow">Вибірковий модуль · 11 клас</p>
+                <h1>Робота з Інформатики за ІІ семестр 2025–2026 н.р.</h1>
+                <p class="lead">Тема: базові поняття інформаційної безпеки, загрози автоматизованим системам, механізми
+                    захисту, електронний підпис і VPN.</p>
+                <div class="author-card">
+                    <span>Автор роботи:</span>
+                    <strong contenteditable="true" title="Натисніть і впишіть свої дані">[Ваше ім’я та прізвище], 11
+                        клас</strong>
+                </div>
+            </div>
+
+            <div class="shield-visual" aria-label="Анімована ілюстрація кіберзахисту">
+                <svg viewBox="0 0 420 420" role="img" aria-labelledby="shieldTitle shieldDesc">
+                    <title id="shieldTitle">Цифровий щит</title>
+                    <desc id="shieldDesc">Щит захищає дані від загроз.</desc>
+                    <defs>
+                        <linearGradient id="shieldGrad" x1="0" x2="1" y1="0" y2="1">
+                            <stop offset="0%" stop-color="#56e0ff" />
+                            <stop offset="50%" stop-color="#7c5cff" />
+                            <stop offset="100%" stop-color="#22c55e" />
+                        </linearGradient>
+                        <filter id="glow">
+                            <feGaussianBlur stdDeviation="5" result="blur" />
+                            <feMerge>
+                                <feMergeNode in="blur" />
+                                <feMergeNode in="SourceGraphic" />
+                            </feMerge>
+                        </filter>
+                    </defs>
+                    <circle cx="210" cy="210" r="180" fill="none" stroke="rgba(255,255,255,.12)" stroke-width="2" />
+                    <circle class="orbit" cx="210" cy="30" r="7" fill="#56e0ff" filter="url(#glow)" />
+                    <circle class="orbit orbit-two" cx="210" cy="30" r="5" fill="#22c55e" filter="url(#glow)" />
+                    <path class="shield"
+                        d="M210 62 L330 112 V205 C330 288 278 344 210 372 C142 344 90 288 90 205 V112 Z"
+                        fill="url(#shieldGrad)" opacity=".92" />
+                    <path d="M210 92 L302 130 V207 C302 271 263 317 210 342 C157 317 118 271 118 207 V130 Z"
+                        fill="rgba(3,7,18,.7)" />
+                    <path class="check" d="M154 213 L192 251 L273 166" fill="none" stroke="#a7f3d0" stroke-width="18"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    <g class="bits" fill="#e0f2fe" opacity=".8">
+                        <text x="42" y="128">0101</text><text x="300" y="72">RSA</text><text x="325"
+                            y="298">VPN</text><text x="38" y="310">2FA</text>
+                    </g>
+                </svg>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="panel intro-panel">
+            <div>
+                <h2>Мета сторінки</h2>
+                <p>Показати, що інформаційна безпека — це не одна програма, а система правил, технічних засобів і
+                    відповідальної поведінки користувача. Її головні цілі: <strong>конфіденційність</strong>,
+                    <strong>цілісність</strong> і <strong>доступність</strong> даних.</p>
+            </div>
+            <div class="cia-diagram" aria-label="Тріада інформаційної безпеки">
+                <div><span>К</span><b>Конфіденційність</b></div>
+                <div><span>Ц</span><b>Цілісність</b></div>
+                <div><span>Д</span><b>Доступність</b></div>
+            </div>
+        </section>
+
+        <section class="section-block" id="threats">
+            <div class="section-heading">
+                <p class="eyebrow">Питання 1</p>
+                <h2>Загрози безпеці інформації в автоматизованих системах</h2>
+            </div>
+            <div class="cards threat-cards">
+                <article class="card"><span class="icon">🦠</span>
+                    <h3>Шкідливе ПЗ</h3>
+                    <p>Віруси, трояни, шпигунські програми й ransomware можуть викрадати, шифрувати або знищувати дані.
+                    </p>
+                </article>
+                <article class="card"><span class="icon">🔓</span>
+                    <h3>Несанкціонований доступ</h3>
+                    <p>Зловмисник отримує доступ до системи через слабкий пароль, вразливість або викрадений обліковий
+                        запис.</p>
+                </article>
+                <article class="card"><span class="icon">🎣</span>
+                    <h3>Фішинг і соціальна інженерія</h3>
+                    <p>Користувача обманом змушують відкрити шкідливе посилання, ввести пароль або передати
+                        конфіденційні дані.</p>
+                </article>
+                <article class="card"><span class="icon">🧩</span>
+                    <h3>Вразливості програм</h3>
+                    <p>Помилки в операційних системах і застосунках можуть дозволити виконання стороннього коду або
+                        підвищення привілеїв.</p>
+                </article>
+                <article class="card"><span class="icon">📡</span>
+                    <h3>Перехоплення трафіку</h3>
+                    <p>У незахищених мережах дані можуть бути прочитані або змінені під час передавання між пристроями.
+                    </p>
+                </article>
+                <article class="card"><span class="icon">⚡</span>
+                    <h3>Відмова в обслуговуванні</h3>
+                    <p>DoS/DDoS-атаки перевантажують ресурс, через що законні користувачі не можуть отримати доступ до
+                        сервісу.</p>
+                </article>
+                <article class="card"><span class="icon">🗃️</span>
+                    <h3>Втрата або пошкодження даних</h3>
+                    <p>Дані можуть зникнути через збій обладнання, помилку користувача, аварію, неправильне налаштування
+                        або атаку.</p>
+                </article>
+                <article class="card"><span class="icon">👤</span>
+                    <h3>Внутрішні загрози</h3>
+                    <p>Працівник або користувач із доступом може випадково чи навмисно порушити правила безпеки.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-block" id="mechanisms">
+            <div class="section-heading">
+                <p class="eyebrow">Питання 2</p>
+                <h2>Основні захисні механізми</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item"><b>1. Ідентифікація та автентифікація</b>
+                    <p>Система визначає користувача й перевіряє, чи він справді той, за кого себе видає. Приклади:
+                        пароль, PIN, біометрія, двофакторна автентифікація.</p>
+                </div>
+                <div class="timeline-item"><b>2. Авторизація та розмежування доступу</b>
+                    <p>Користувачу надаються лише ті права, які потрібні для роботи. Це реалізує принцип мінімальних
+                        привілеїв.</p>
+                </div>
+                <div class="timeline-item"><b>3. Шифрування</b>
+                    <p>Дані перетворюються на нечитабельний вигляд без ключа. Шифрування застосовують для файлів,
+                        дисків, листування і мережевого трафіку.</p>
+                </div>
+                <div class="timeline-item"><b>4. Контроль цілісності</b>
+                    <p>Хеш-функції, контрольні суми та електронний підпис допомагають перевірити, чи не було змінено
+                        файл або повідомлення.</p>
+                </div>
+                <div class="timeline-item"><b>5. Резервне копіювання</b>
+                    <p>Копії даних дозволяють відновитися після помилки, вірусу, крадіжки пристрою або технічного збою.
+                    </p>
+                </div>
+                <div class="timeline-item"><b>6. Антивірус, брандмауер, IDS/IPS</b>
+                    <p>Ці засоби виявляють шкідливу активність, блокують небезпечні з’єднання й попереджають про
+                        підозрілі події.</p>
+                </div>
+                <div class="timeline-item"><b>7. Журналювання та аудит</b>
+                    <p>Система фіксує події: входи, зміни, помилки, спроби доступу. Це допомагає знаходити інциденти й
+                        відповідальних.</p>
+                </div>
+                <div class="timeline-item"><b>8. Оновлення та навчання користувачів</b>
+                    <p>Патчі закривають відомі вразливості, а навчання зменшує ризик фішингу й необережних дій.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="split section-block" id="signature">
+            <div>
+                <p class="eyebrow">Питання 3</p>
+                <h2>Поняття «Електронний підпис»</h2>
+                <p><strong>Електронний підпис</strong> — це електронні дані, які додаються до документа або логічно
+                    пов’язані з ним і використовуються для підтвердження автора та цілісності документа.</p>
+                <p>У криптографічному варіанті створюється хеш документа, який підписується приватним ключем автора.
+                    Інші користувачі можуть перевірити підпис за допомогою відкритого ключа.</p>
+                <ul class="check-list">
+                    <li>підтверджує, хто підписав документ;</li>
+                    <li>показує, чи змінювали документ після підписання;</li>
+                    <li>допомагає довести факт підписання.</li>
+                </ul>
+            </div>
+            <div class="signature-demo" aria-label="Схема електронного підпису">
+                <div class="doc">Документ<br><span>101101...</span></div>
+                <div class="arrow">→</div>
+                <div class="hash">Хеш<br><span>#A91F</span></div>
+                <div class="arrow">→</div>
+                <div class="key">Приватний ключ<br><span>Підпис</span></div>
+            </div>
+        </section>
+
+        <section class="section-block" id="vpn">
+            <div class="section-heading">
+                <p class="eyebrow">Питання 4</p>
+                <h2>Віртуальні приватні мережі VPN</h2>
+            </div>
+            <div class="vpn-visual panel">
+                <div class="device">💻<span>Пристрій</span></div>
+                <div class="tunnel"><span></span><b>зашифрований тунель</b></div>
+                <div class="server">🛡️<span>VPN-сервер</span></div>
+                <div class="cloud">☁️<span>Інтернет</span></div>
+            </div>
+            <p><strong>VPN</strong> — це технологія створення захищеного каналу зв’язку між пристроєм користувача та
+                віддаленою мережею або сервером. Дані передаються через «тунель» і зазвичай шифруються.</p>
+            <div class="pros-cons">
+                <article class="card good">
+                    <h3>Переваги</h3>
+                    <ul>
+                        <li>захист трафіку в публічних Wi-Fi мережах;</li>
+                        <li>безпечний віддалений доступ до ресурсів школи, компанії або домашньої мережі;</li>
+                        <li>приховування реальної IP-адреси від сайтів;</li>
+                        <li>зменшення ризику перехоплення даних у мережі.</li>
+                    </ul>
+                </article>
+                <article class="card bad">
+                    <h3>Недоліки</h3>
+                    <ul>
+                        <li>швидкість інтернету може зменшитися;</li>
+                        <li>потрібно довіряти VPN-провайдеру;</li>
+                        <li>VPN не захищає від фішингу, вірусів і слабких паролів;</li>
+                        <li>деякі сайти або сервіси можуть блокувати VPN-підключення.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="quiz-panel panel" aria-labelledby="quizTitle">
+            <div>
+                <p class="eyebrow">Мультимедійний елемент</p>
+                <h2 id="quizTitle">Мініперевірка</h2>
+                <p>Натисніть відповідь і перевірте себе.</p>
+            </div>
+            <div class="quiz-box" data-answer="b">
+                <p><strong>Що найкраще захищає обліковий запис, якщо пароль уже став відомий?</strong></p>
+                <button data-choice="a">Тільки зміна фону екрана</button>
+                <button data-choice="b">Двофакторна автентифікація</button>
+                <button data-choice="c">Вимкнення оновлень</button>
+                <p class="quiz-result" aria-live="polite"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 · Навчальна робота з інформатики · <a href="story.html">Перейти до сторінки 2</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
